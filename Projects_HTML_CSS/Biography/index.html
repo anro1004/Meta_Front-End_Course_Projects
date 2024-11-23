@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Andy R</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h1>Andy R</h1>
+                <img src="photo.jpeg" class="img-fluid" id="photo">
+            </div>
+            <div id="more" class="col-12 col-lg-6">
+                <div class="row">
+                    <h2>Favorite Music Artists</h2>
+                    <ul id='artistList'> </ul>
+                    <input type="text" id="inputArtist" placeholder="Escribe un nombre de artista">
+                    <button id="addButtonArtist" class="btn btn-primary" type="button">Agregar a la lista</button>
+                    <h2>Favorite Films</h2>
+                    <ol id='filmList'> </ol>
+                    <input type="tel" id="inputFilm" placeholder="Escribe un nombre del film">
+                    <button id="addButtonFilm" class="btn btn-primary" type="button">Agregar a la lista</button>
+                </div>
+                <div class="row">
+                    <button id="counterButton" class="btn btn-primary" type="button">
+                        Count
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="funcions.js"></script>
+</body>
+
+</html>

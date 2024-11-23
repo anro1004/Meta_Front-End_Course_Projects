@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Little Lemon</title>
+
+  <meta property="og:title" content="Our Menu">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url" content="https://littlelemon/">
+  <meta property="og:description"
+    content="Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Little Lemon">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <img src="logo.png">
+  </header>
+  <main>
+    <form>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" required minlength="2">
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" required minlength="2">
+      </div>
+      <button type="submit">Log In</button>
+    </form>
+    <div>
+      <input type="checkbox" id="dog" name="dog" value="Dog">
+      <label for="dog">I like dogs</label>
+      <input type="checkbox" id="cat" name="cat" value="Cat">
+      <label for="cat">I like cats</label>
+    </div>
+    <div>
+      <input type="radio" id="light" name="theme" value="Light">
+      <label for="light">Light</label>
+      <input type="radio" id="dark" name="theme" value="Dark">
+      <label for="dark">Dark</label>
+    </div>
+    <div>
+      <label for="dob">Date of birth:</label>
+      <input type="date" id="dob" name="date of birth">
+    </div>
+    <div>
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      <br>
+      <label for="time">Birthday (time):</label>
+      <input type="time" id="time" name="time">
+    </div>
+    <div>
+      <label for="cantPerson">Catidad de personas:</label>
+      <input type="range" id="cantPerson" name="cantPerson" value="4" min="1" max="8"
+        oninput="this.nextElementSibling.value = this.value"><output>4</output>
+      <br>
+      <label for="quantity"> Numero de personas</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="8">
+      <br>
+      <label for="phone">Enter your phone number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11}">
+    </div>
+    <div>
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email">
+      <br>
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile">
+    </div>
+    <div>
+      <label for="location">Location</label>
+      <input id="location" name="location" list="location_adress">
+      <datalist id="location_adress">
+        <option value="Miami"></option>
+        <option value="Orlando"></option>
+        <option value="Key West"></option>
+        <option value="Tampa"></option>
+      </datalist>
+    </div>
+    <div>
+      <button type="button" onclick="alert('You just clicked!')">Click Me!</button>
+    </div>
+    <div>
+      <label for="course">Choose a course:</label><br>
+      <select id="course" name="courselist">
+        <option value="html">HTML Introduction</option>
+        <option value="css">Styling with CSS</option>
+        <option value="js">JavaScript</option>
+        <option value="react">React Basics</option>
+      </select>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+        <button type="button" onclick="alert('Info has been changed')">Change</button>
+      </fieldset>
+       <br>
+      <fieldset>
+        <legend>Qualificaiton</legend>
+        <label for="pdegree">Primary degree:</label><br>
+        <input type="text" id="pdegree" name="degree" value="Masters"><br>
+        <label for="fos">Last name:</label><br>
+        <input type="text" id="fos" name="field" value="Psychology"><br>
+      </fieldset>
+    </div>
+    <div>
+      <textarea name="response" rows="2" cols="20" maxlength=”200”></textarea> 
+    </div>
+  </main>
+</body>
+
+</html>
