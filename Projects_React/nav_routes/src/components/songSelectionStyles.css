@@ -1,0 +1,44 @@
+.btn {
+    background-color: #ee9972;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    border: none;
+    /* Sin bordes */
+    margin: 10px;
+    /* Espaciado externo */
+    padding: 10px 20px;
+    /* Espaciado interno */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Mantiene los botones en línea */
+    font-size: 16px;
+    /* Tamaño de la fuente */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor a "mano" */
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+}
+
+.btn:hover {
+    background-color: #d88765;
+    /* Color al pasar el mouse */
+}
+
+.btn:active {
+    background-color: #c67858;
+    /* Color al hacer clic */
+    transform: scale(0.95);
+    /* Efecto de "clic" */
+}
+
+.btn:focus {
+    outline: 2px solid #ee9972;
+    /* Indicador de enfoque */
+    outline-offset: 2px;
+}
