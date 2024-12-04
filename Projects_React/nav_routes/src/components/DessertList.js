@@ -1,11 +1,11 @@
 import React from 'react';
 function DessertsList({ data }) {
     const filteredDesserts = data
-        .filter(dessert => dessert.calories < 500)
+        .filter(allDesserts => allDesserts.calories < 500 && allDesserts.calories > 0 )
         .sort((a, b) => a.calories - b.calories)
-        .map(dessert => {
+        .map(desserts => {
             return (
-                <li key={dessert.name} >{dessert.name} - {dessert.calories} cal</li>
+                <li key={desserts.name} >{desserts.name} - {desserts.calories} cal</li>
             )
         });
 
