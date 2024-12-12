@@ -1,9 +1,9 @@
 import {
-  AlertDialog,
-  AlertDialogBody,
-  AlertDialogContent,
-  AlertDialogHeader,
-  AlertDialogOverlay,
+  Dialog,
+  DialogBody,
+  DialogContent,
+  DialogHeader,
+  DialogRoot,
 } from '@chakra-ui/react';
 import { useAlertContext } from "../context/alertContext";
 import { useRef } from "react";
@@ -17,20 +17,20 @@ function Alert() {
   const isSuccess = type === "success"
 
   return (
-    <AlertDialog
+    <Dialog
       isOpen={isOpen}
       leastDestructiveRef={cancelRef}
       onClose={onClose}
     >
-      <AlertDialogOverlay>
-        <AlertDialogContent py={4} backgroundColor={isSuccess ? '#81C784' : '#FF8A65'}>
-          <AlertDialogHeader fontSize="lg" fontWeight="bold">
+      <DialogRoot>
+        <DialogContent py={4} backgroundColor={isSuccess ? '#81C784' : '#FF8A65'}>
+          <DialogHeader fontSize="lg" fontWeight="bold">
             {isSuccess ? 'All good!' : 'Oops!'}
-          </AlertDialogHeader>
-          <AlertDialogBody>{message}</AlertDialogBody>
-        </AlertDialogContent>
-      </AlertDialogOverlay>
-    </AlertDialog>
+          </DialogHeader>
+          <DialogBody>{message}</DialogBody>
+        </DialogContent>
+      </DialogRoot>
+    </Dialog>
   );
 }
 
