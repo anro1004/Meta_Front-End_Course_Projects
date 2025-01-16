@@ -1,20 +1,20 @@
-li::first-letter { 
-    color:coral; 
-    font-size: 1.3em; 
-    font-weight: bold; 
-    line-height: 1; 
-} 
+li::first-letter {
+  color: coral;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1;
+}
 
 li::selection {
-    color:brown;
-    background-color: antiquewhite;
-    line-height: 1;
+  color: brown;
+  background-color: antiquewhite;
+  line-height: 1;
 }
 
 li::marker {
-    color: cornflowerblue;
-    content: ';) ';
-    font-size: 1.1em;
+  color: cornflowerblue;
+  content: ";) ";
+  font-size: 1.1em;
 }
 
 /*
@@ -28,4 +28,3 @@ li::first-line {
     line-height: 1;
 }
 */
-
