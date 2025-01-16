@@ -1,66 +1,66 @@
-*{
-    margin: 3px;
+* {
+  margin: 3px;
 }
 
 body {
-    background-color: #E0E0E2;
+  background-color: #e0e0e2;
 }
 
 ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 0px;
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
 }
 
 li {
-    display: inline;
+  display: inline;
 }
 
 main {
-    text-align: center;
+  text-align: center;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 h1 {
-    color: #721817;
+  color: #721817;
 }
 
 h2 {
-    color: #721817;
+  color: #721817;
 }
 
 .center-text {
-    text-align: center;
+  text-align: center;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h2 > span {
-    color: #FA9F42;
-    font-size: 0.75em;
+  color: #fa9f42;
+  font-size: 0.75em;
 }
 
 form > div {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 #copyright {
-    padding-top: 12px;
-    font-size: 0.75em;
+  padding-top: 12px;
+  font-size: 0.75em;
 }
 
 input:focus:invalid {
-    color: red;
-    border: red 3px solid;
+  color: red;
+  border: red 3px solid;
 }
-div input{
-    color: green;
+div input {
+  color: green;
 }
