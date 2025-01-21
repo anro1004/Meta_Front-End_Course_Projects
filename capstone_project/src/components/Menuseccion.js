@@ -4,9 +4,9 @@ import Dish from "./Dish";
 const Menuseccion = ({ plates }) => {
     return (
           <ul>
-            {plates.map((plates, index) => (
+            {plates.map((plate, index) => (
               <li key={index}>
-                <Dish plates={plates} />
+                <Dish plate={plate} />
               </li>
             ))}
           </ul>
