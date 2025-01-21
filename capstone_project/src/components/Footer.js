@@ -1,5 +1,5 @@
 import React from "react";
-const Footer = ({ imgSrc }) => {
+const Footer = ( { imgSrc } ) => {
   return (
     <footer>
       <div class="footer-section icon">

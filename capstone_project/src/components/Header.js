@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = ({ imageSrc }) => {
+const Header = ( { imageSrc } ) => {
   return (
     <header>
       <img src={imageSrc} alt="logo" />
