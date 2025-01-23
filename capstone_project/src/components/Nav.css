@@ -1,0 +1,26 @@
+.nav {
+  background-color: #495e57;
+  border-radius: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.nav li {
+  margin: 0 20px;
+  display: inline-block;
+}
+.nav-item {
+  color: #e0e0e2;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: background-color 0.4s;
+  border-radius: 5px;
+  font-size: 40px;
+}
+
+.nav-item:hover {
+  background-color: #7a8c89;
+}

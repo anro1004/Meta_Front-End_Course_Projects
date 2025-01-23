@@ -58,9 +58,9 @@ const dessert = [
 const Menupage = () => {
   return (
     <>
-      <Menuseccion plates={appetaizers} />
-      <Menuseccion plates={entres} />
-      <Menuseccion plates={dessert} />
+      <Menuseccion plates={appetaizers} title="Appetaizers" />
+      <Menuseccion plates={entres} title="Entrees" />
+      <Menuseccion plates={dessert} title="Dessert" />
     </>
   );
 };

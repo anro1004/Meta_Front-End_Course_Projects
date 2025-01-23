@@ -1,0 +1,18 @@
+/* Styles for individual dish (Dish component) */
+.dish h2 {
+  font-size: 25px;
+  margin: 0 0 5px 0;
+  color: #495e57; /* Dark green-gray for titles */
+}
+
+.dish p {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #757575; /* Subtle gray for descriptions */
+}
+
+.dish span {
+  font-size: 25px;
+  font-weight: bold;
+  color: #495e57; /* Dark green-gray for prices */
+}
