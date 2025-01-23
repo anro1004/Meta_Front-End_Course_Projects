@@ -1,10 +1,10 @@
 import React from "react";
+import "./Mainarticle.css";
 
-const Article = ({ title, imageSrc, description }) => {
+const Article = ({ title, description }) => {
   return (
-    <article>
+    <article className="mainarticle">
       <h1>{title}</h1>
-      <img src={imageSrc} alt="" />
       <p>{description}</p>
     </article>
   );

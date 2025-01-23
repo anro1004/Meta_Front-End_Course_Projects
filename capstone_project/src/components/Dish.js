@@ -1,11 +1,12 @@
 import React from "react";
+import "./Dish.css";
 
 const Dish = ({ plate }) => {
   return (
-    <div>
+    <div className="dish">
       <h2>{plate.name}</h2>
       <p>{plate.description}</p>
-      <h3>{plate.price}</h3>
+      <span>{plate.price}</span>
     </div>
   );
 };
