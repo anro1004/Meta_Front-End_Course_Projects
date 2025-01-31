@@ -1,5 +1,5 @@
 import React, { useReducer, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Para navegación programática
+import { useNavigate } from "react-router-dom";
 import BookingForm from "./BookingForm";
 import { fetchAPI, submitAPI } from "./api";
 
@@ -13,6 +13,7 @@ const timesReducer = (state, action) => {
 };
 
 const Booking = () => {
+
   /*const [apiData, setApiData] = useState();
 
   useEffect(() => {
@@ -34,8 +35,8 @@ const Booking = () => {
     };
 
     fetchData();
-  }, []);
-*/
+  }, []);*/
+
   const [availableTimes, dispatch] = useReducer(timesReducer, []);
   const navigate = useNavigate();
 
