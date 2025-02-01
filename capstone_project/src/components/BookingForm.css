@@ -31,6 +31,13 @@ form select {
   box-sizing: border-box; /* Evita que el padding afecte el tamaño total */
 }
 
+.error-message {
+  color: #ff4d4d;
+  font-size: 18px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
 form button {
   width: 100%;
   padding: 10px;
