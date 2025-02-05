@@ -5,6 +5,7 @@ import "./Homepage.css";
 import OurMenuPhoto from "../assets/Our Menu.jpg";
 import BookingPhoto from "../assets/Book a Table.jpg";
 import OpeningHoursPhoto from "../assets/Opening Hours.jpg";
+import { Link } from "react-router-dom";
 
 
 const ActualOfert = {
@@ -30,9 +31,22 @@ const Homepage = () => {
         <Mainarticle title={ActualOfert.title} description={ActualOfert.description} />
       </div>
       <div className="articles">
-        <Article title={OurMenu.title} imageSrc={OurMenuPhoto} description={OurMenu.description} />
-        <Article title={Booking.title} imageSrc={BookingPhoto} description={Booking.description} />
-        <Article title={OpeningHours.title} imageSrc={OpeningHoursPhoto} description={OpeningHours.description} />
+        {/* Convertimos los artículos en enlaces */}
+        <Link to="/menu" className="article-link">
+          <div className="article">
+            <Article title={OurMenu.title} imageSrc={OurMenuPhoto} description={OurMenu.description} />
+          </div>
+        </Link>
+        <Link to="/booking" className="article-link">
+          <div className="article">
+            <Article title={Booking.title} imageSrc={BookingPhoto} description={Booking.description} />
+          </div>
+        </Link>
+        <Link to="/about" className="article-link">
+          <div className="article">
+            <Article title={OpeningHours.title} imageSrc={OpeningHoursPhoto} description={OpeningHours.description} />
+          </div>
+        </Link>
       </div>
     </>
   );

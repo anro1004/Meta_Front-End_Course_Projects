@@ -1,8 +1,25 @@
-
-.articles , .mainarticle {
+/* Estilos generales para los artículos y la sección principal */
+.articles, .mainarticle {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/* Cada artículo ocupará un 33% del ancho, pero limitará el tamaño máximo */
+.article {
+  flex: 1 1 calc(33.33% - 20px); /* Esto hace que cada artículo ocupe un 33% del ancho, con espacio entre ellos */
+  max-width: 470px; /* Limita el ancho máximo para evitar que los artículos se expandan demasiado */
+  box-sizing: border-box;
+}
+
+/* Enlaces de artículos */
+.article-link {
+  color: #000;
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+.article-link:hover {
+  opacity: 0.8; /* Añade un efecto visual de hover */
 }

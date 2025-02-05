@@ -9,6 +9,9 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
 
   // Esquema de validación con Yup
   const validationSchema = Yup.object({
+    name: Yup.string()
+      .min(3, "El nombre es muy corto")
+      .required("El nombre es obligatorio"),
     date: Yup.date()
       .min(today, "La fecha no puede ser en el pasado")
       .required("La fecha es obligatoria"),
@@ -23,6 +26,7 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
   return (
     <Formik
       initialValues={{
+        name: "",
         date: today,
         time: "",
         guests: 1,
@@ -36,6 +40,10 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
     >
       {({ values, setFieldValue, isSubmitting }) => (
         <Form className="booking-form">
+          <label>Nombre y Apellido:</label>
+          <Field type="text" name="name" placeholder="Nombre y Apellido" />
+          <ErrorMessage name="name" component="div" className="error-message" />
+
           <label>Fecha:</label>
           <Field
             type="date"
@@ -61,7 +69,11 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
 
           <label>Número de Invitados:</label>
           <Field type="number" name="guests" min="1" max="6" />
-          <ErrorMessage name="guests" component="div" className="error-message" />
+          <ErrorMessage
+            name="guests"
+            component="div"
+            className="error-message"
+          />
 
           <label>Ocasión:</label>
           <Field as="select" name="occasion">
@@ -69,7 +81,11 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
             <option value="Aniversario">Aniversario</option>
             <option value="Otro">Otro</option>
           </Field>
-          <ErrorMessage name="occasion" component="div" className="error-message" />
+          <ErrorMessage
+            name="occasion"
+            component="div"
+            className="error-message"
+          />
 
           <button type="submit" aria-label="Reservar" disabled={isSubmitting}>
             {isSubmitting ? "Enviando..." : "Reservar"}
@@ -81,16 +97,6 @@ const BookingForm = ({ availableTimes, onDateChange, onSubmit }) => {
 };
 
 export default BookingForm;
-
-
-
-
-
-
-
-
-
-
 
 /*import React, { useState } from 'react';
 import "./BookingForm.css";
