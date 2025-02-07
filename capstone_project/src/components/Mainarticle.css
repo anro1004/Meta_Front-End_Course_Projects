@@ -1,20 +1,29 @@
-article {
-  flex: 1;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .mainarticle {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("../assets/Main Salon.jpg")  no-repeat center center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Gradiente */
+    url("../assets/Main Salon.jpg") no-repeat center center; /* Imagen de fondo */
   background-size: cover;
+  background-attachment: fixed;  /* Fija la imagen de fondo al hacer scroll */
   color: white;
   padding: 50px;
   font-size: xx-large;
   border-radius: 10px;
+  text-align: center;  /* Centra el contenido dentro de .mainarticle */
 }
 
 h1 {
   font-size: 50px;
   margin: 10px 0px 100px 0px;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 600px) {
+  .mainarticle {
+    padding: 20px;  /* Reduce el padding en pantallas pequeñas */
+  }
+
+  h1 {
+    font-size: 30px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    margin: 10px 0px; /* Ajusta el margen del título */
+  }
 }

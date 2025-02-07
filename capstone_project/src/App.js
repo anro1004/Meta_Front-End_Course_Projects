@@ -7,6 +7,9 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Homepage from "./components/Homepage";
 import Menupage from "./components/Menupage";
+import Booking from "./components/Booking";
+import ConfirmedBooking from "./components/ConfirmedBooking";
+import About from "./components/About";
 
 const navLinks = [
   { path: "/", text: "Home" },
@@ -24,8 +27,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/menu" element={<Menupage/>} />
-          <Route path="/booking" element={<h1>Booking Page</h1>} />
-          <Route path="/about" element={<h1>About Us</h1>} />
+          <Route path="/booking" element={<Booking/>} />
+          <Route path="/confirmed" element={<ConfirmedBooking />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Router>
       <Footer imgSrc={logo2} />
